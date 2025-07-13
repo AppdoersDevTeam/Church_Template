@@ -62,9 +62,12 @@ const Header = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <button className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2 rounded-full font-medium hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a 
+              href="#join-us" 
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2 rounded-full font-medium hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+            >
               Visit Us
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -100,9 +103,13 @@ const Header = () => {
               </a>
             ))}
             <div className="px-6 pt-2">
-              <button className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-3 rounded-lg font-medium hover:from-gold-600 hover:to-gold-700 transition-all duration-300">
+              <a 
+                href="#join-us" 
+                className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-3 rounded-lg font-medium hover:from-gold-600 hover:to-gold-700 transition-all duration-300 inline-block text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Visit Us
-              </button>
+              </a>
             </div>
           </div>
         </div>
