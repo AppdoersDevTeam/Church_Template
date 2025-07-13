@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { MessageCircle, Mail, Phone, Send, User, Heart } from 'lucide-react';
+import { MessageCircle, Mail, Phone, Send, User, Heart, Clock, Users, Calendar } from 'lucide-react';
 
 const Connect = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,6 +71,33 @@ const Connect = () => {
     }
   ];
 
+  const quickLinks = [
+    {
+      title: "Service Times",
+      description: "Sunday worship schedule",
+      href: "#join-us",
+      icon: Clock
+    },
+    {
+      title: "About Us",
+      description: "Learn about our church",
+      href: "#about",
+      icon: Users
+    },
+    {
+      title: "Events",
+      description: "Upcoming activities",
+      href: "#events",
+      icon: Calendar
+    },
+    {
+      title: "Ministries",
+      description: "Our programs & services",
+      href: "#services",
+      icon: Heart
+    }
+  ];
+
   return (
     <section id="connect" ref={sectionRef} className="py-20 bg-gradient-to-br from-navy-900 via-navy-800 to-teal-900 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -83,14 +110,14 @@ const Connect = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Let's{' '}
+            Connect{' '}
             <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-              Connect
+              With Us
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We'd love to hear from you! Whether you're new, have questions, or want to get involved, 
-            we're here to help you take your next step.
+            Get in touch, find quick links to important information, and discover ways to get involved 
+            in our community.
           </p>
         </div>
 
@@ -121,7 +148,7 @@ const Connect = () => {
             </div>
 
             {/* Contact info */}
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <h4 className="text-lg font-semibold text-white">Get in Touch</h4>
               <div className="flex items-center text-gray-300">
                 <Phone className="h-5 w-5 mr-3 text-gold-400" />
@@ -130,6 +157,30 @@ const Connect = () => {
               <div className="flex items-center text-gray-300">
                 <Mail className="h-5 w-5 mr-3 text-gold-400" />
                 <span>hello@gracecommunity.nz</span>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+              <div className="grid grid-cols-2 gap-3">
+                {quickLinks.map((link) => (
+                  <a
+                    key={link.title}
+                    href={link.href}
+                    className="group bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 cursor-pointer"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-gradient-to-br from-gold-500 to-gold-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <link.icon className="h-4 w-4 text-white" />
+                      </div>
+                      <div>
+                        <h5 className="text-sm font-semibold text-white">{link.title}</h5>
+                        <p className="text-xs text-gray-300">{link.description}</p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
           </div>

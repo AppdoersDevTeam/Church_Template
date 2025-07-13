@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Events from './components/Events';
+import JoinUs from './components/JoinUs';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <Events />
+      <JoinUs />
       <Connect />
       <Footer />
     </div>
