@@ -10,13 +10,37 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-teal-900">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      {/* Background with image and overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src="/ABC background01.png" 
+          alt="Church Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* Organic shapes */}
         <div className="absolute top-10 right-10 w-72 h-72 bg-gold-500 rounded-full opacity-10 blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-teal-500 rounded-full opacity-10 blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-coral-500 rounded-full opacity-5 blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
+      </div>
+
+      {/* ABC Logo - Top Left */}
+      <div className="absolute top-8 left-40 z-20">
+        <div className="relative">
+          {/* Solid sun effect background */}
+          <div className="absolute inset-0 bg-gold-500 rounded-full blur-sm scale-110 animate-pulse"></div>
+          <div className="absolute inset-0 bg-gold-400 rounded-full blur-md scale-105 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute inset-0 bg-gold-300 rounded-full blur-lg scale-100 animate-pulse" style={{animationDelay: '1s'}}></div>
+          
+          {/* Logo with solid border */}
+          <div className="relative bg-gold-500 p-0.5 rounded-full" style={{padding: '1px'}}>
+            <img 
+              src="/ABC Logo.png" 
+              alt="ABC Logo" 
+              className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 rounded-full"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Content */}

@@ -28,49 +28,41 @@ const Header = () => {
         : 'bg-transparent'
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 lg:h-20">
-          {/* Logo */}
-          <div className="flex items-center space-x-2 group cursor-pointer">
-            <div className="relative">
-              <img 
-                src="/ABC Logo.png" 
-                alt="ABC Logo" 
-                className={`h-8 w-8 transition-all duration-300 group-hover:scale-110`}
-              />
-              <div className="absolute inset-0 bg-gold-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 transform scale-150"></div>
-            </div>
-            <span className={`text-xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-navy-600' : 'text-white'
-            }`}>
-              Ashburton Baptist Church
-            </span>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 ${
-                  isScrolled 
-                    ? 'text-navy-600 hover:text-gold-600' 
-                    : 'text-white hover:text-gold-300'
-                } group`}
-              >
-                {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+        <div className="flex justify-center items-center h-16 lg:h-20 relative pt-32">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden lg:flex items-center space-x-4">
+            {navItems.map((item, index) => (
+              <React.Fragment key={item.name}>
+                <a
+                  href={item.href}
+                  className={`relative px-4 py-3 text-base font-bold transition-all duration-300 hover:scale-105 ${
+                    isScrolled 
+                      ? 'text-navy-600 hover:text-gold-500' 
+                      : 'text-white hover:text-gold-500'
+                  } group`}
+                >
+                  {item.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                {index < navItems.length - 1 && (
+                  <span className={`text-lg font-medium ${
+                    isScrolled ? 'text-gold-600' : 'text-gold-400'
+                  }`}>/</span>
+                )}
+              </React.Fragment>
             ))}
+            <span className={`text-lg font-medium ${
+              isScrolled ? 'text-gold-600' : 'text-gold-400'
+            }`}>/</span>
             <a 
               href="#join-us" 
-              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2 rounded-full font-medium hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-8 py-3 rounded-full font-bold text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
             >
               Visit Us
             </a>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu button - Centered */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`lg:hidden p-2 rounded-md transition-colors duration-300 ${
