@@ -138,7 +138,7 @@ const JoinUs = () => {
                 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-navy-900">Grace Community Church</h4>
+                    <h4 className="font-semibold text-navy-900">Ashburton Baptist Church</h4>
                     <p className="text-gray-600">123 Faith Street, Auckland 1010</p>
                   </div>
                   

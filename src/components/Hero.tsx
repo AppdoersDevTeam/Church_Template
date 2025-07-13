@@ -25,10 +25,10 @@ const Hero = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Welcome to{' '}
-            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-              Grace Community
-            </span>
+            <div>Welcome to</div>
+            <div className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+              Ashburton Baptist Church
+            </div>
           </h1>
           
           <p className={`text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto transition-all duration-1000 delay-300 ${

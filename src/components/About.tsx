@@ -171,7 +171,7 @@ const About = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-            For over 25 years, Grace Community has been a beacon of hope in New Zealand, 
+            For over 25 years, Ashburton Baptist Church has been a beacon of hope in New Zealand, 
             bringing people together in faith, love, and service to our community.
           </p>
 

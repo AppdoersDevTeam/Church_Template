@@ -155,7 +155,7 @@ const ServiceInfo = () => {
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-navy-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-navy-900">Grace Community Church</p>
+                    <p className="font-semibold text-navy-900">Ashburton Baptist Church</p>
                     <p className="text-gray-600">123 Church Street, Christchurch 8011</p>
                     <p className="text-gray-600">New Zealand</p>
                   </div>

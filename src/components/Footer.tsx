@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <Heart className="h-8 w-8 text-gold-400" />
-              <span className="text-2xl font-bold">Grace Community</span>
+              <span className="text-2xl font-bold">Ashburton Baptist Church</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               A place where faith meets community, and every person matters. 
@@ -149,7 +149,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-right">
               <p className="text-gray-300 text-sm">
-                © {currentYear} Grace Community Church. All rights reserved.
+                © {currentYear} Ashburton Baptist Church. All rights reserved.
               </p>
               <p className="text-gray-400 text-xs mt-1">
                 Made with ❤️ in New Zealand

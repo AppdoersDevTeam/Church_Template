@@ -32,15 +32,17 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2 group cursor-pointer">
             <div className="relative">
-              <Heart className={`h-8 w-8 transition-all duration-300 ${
-                isScrolled ? 'text-navy-600' : 'text-white'
-              } group-hover:scale-110 group-hover:text-gold-500`} />
+              <img 
+                src="/ABC Logo.png" 
+                alt="ABC Logo" 
+                className={`h-8 w-8 transition-all duration-300 group-hover:scale-110`}
+              />
               <div className="absolute inset-0 bg-gold-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 transform scale-150"></div>
             </div>
             <span className={`text-xl font-bold transition-colors duration-300 ${
               isScrolled ? 'text-navy-600' : 'text-white'
             }`}>
-              Grace Community
+              Ashburton Baptist Church
             </span>
           </div>
 
