@@ -33,9 +33,9 @@ const ContactQuickLinks = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "info@gracecommunity.nz",
+              details: "info@ashburtonbaptist.co.nz",
       subtitle: "General Inquiries",
-      action: "mailto:info@gracecommunity.nz"
+              action: "mailto:info@ashburtonbaptist.co.nz"
     },
     {
       icon: MapPin,

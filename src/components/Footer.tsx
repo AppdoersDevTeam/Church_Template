@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail className="h-5 w-5 mr-3 text-gold-400 flex-shrink-0" />
-                <span>hello@gracecommunity.nz</span>
+                <span>hello@ashburtonbaptist.co.nz</span>
               </div>
             </div>
           </div>

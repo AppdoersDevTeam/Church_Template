@@ -116,12 +116,17 @@ const Services = () => {
           <div className="inline-flex items-center space-x-4 bg-white bg-opacity-10 backdrop-blur-md rounded-2xl px-8 py-6 text-white border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
             <MapPin className="h-8 w-8 text-gold-400" />
             <div className="text-left">
-                              <p className="font-semibold text-lg">Ashburton Baptist Church</p>
-              <p className="text-gray-300">123 Hope Street, Auckland, New Zealand</p>
+              <p className="font-semibold text-lg">Ashburton Baptist Church</p>
+              <p className="text-gray-300">284 Havelock Street, Ashburton 7700</p>
             </div>
-            <button className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-3 rounded-full font-semibold hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 ml-4">
+            <a 
+              href="https://maps.google.com/?q=284+Havelock+Street+Ashburton+7700+New+Zealand" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-3 rounded-full font-semibold hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 ml-4 inline-block"
+            >
               Get Directions
-            </button>
+            </a>
           </div>
         </div>
       </div>

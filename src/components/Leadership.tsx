@@ -28,7 +28,7 @@ const Leadership = () => {
       role: "Senior Pastor",
       description: "Leading our congregation with wisdom and compassion for over 15 years.",
       icon: Heart,
-      contact: "pastor@gracecommunity.nz",
+              contact: "pastor@ashburtonbaptist.co.nz",
       phone: "+64 3 555 0123"
     },
     {
@@ -36,7 +36,7 @@ const Leadership = () => {
       role: "Associate Pastor",
       description: "Overseeing youth ministry and community outreach programs.",
       icon: Users,
-      contact: "sarah@gracecommunity.nz",
+              contact: "sarah@ashburtonbaptist.co.nz",
       phone: "+64 3 555 0124"
     },
     {
@@ -44,7 +44,7 @@ const Leadership = () => {
       role: "Elder & Chairman",
       description: "Providing spiritual guidance and church governance leadership.",
       icon: Award,
-      contact: "michael@gracecommunity.nz",
+              contact: "michael@ashburtonbaptist.co.nz",
       phone: "+64 3 555 0125"
     },
     {
@@ -52,7 +52,7 @@ const Leadership = () => {
       role: "Elder",
       description: "Supporting pastoral care and church administration.",
       icon: BookOpen,
-      contact: "david@gracecommunity.nz",
+              contact: "david@ashburtonbaptist.co.nz",
       phone: "+64 3 555 0126"
     },
     {
@@ -60,7 +60,7 @@ const Leadership = () => {
       role: "Office Administrator",
       description: "Managing church operations and coordinating events.",
       icon: Settings,
-      contact: "office@gracecommunity.nz",
+              contact: "office@ashburtonbaptist.co.nz",
       phone: "+64 3 555 0127"
     },
     {
@@ -68,7 +68,7 @@ const Leadership = () => {
       role: "CAP Manager",
       description: "Leading our Christians Against Poverty ministry and financial support.",
       icon: Heart,
-      contact: "cap@gracecommunity.nz",
+              contact: "cap@ashburtonbaptist.co.nz",
       phone: "+64 3 555 0128"
     }
   ];
