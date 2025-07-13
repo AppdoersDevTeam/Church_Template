@@ -28,7 +28,7 @@ const Events = () => {
       title: "Community Outreach Day",
       date: "March 15, 2025",
       time: "9:00 AM - 4:00 PM",
-      location: "Central Auckland",
+      location: "Central Ashburton",
       description: "Join us as we serve our local community with love and compassion.",
       attendees: 85,
       category: "Outreach",

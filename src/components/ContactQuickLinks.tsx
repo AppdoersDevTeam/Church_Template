@@ -26,9 +26,9 @@ const ContactQuickLinks = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: "+64 3 555 0123",
+      details: "+64 3 308 1234",
       subtitle: "Main Office",
-      action: "tel:+6435550123"
+              action: "tel:+6433081234"
     },
     {
       icon: Mail,
@@ -40,9 +40,9 @@ const ContactQuickLinks = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: "123 Church Street",
-      subtitle: "Christchurch 8011, NZ",
-      action: "#"
+      details: "284 Havelock Street",
+      subtitle: "Ashburton 7700, NZ",
+      action: "https://maps.google.com/?q=284+Havelock+Street+Ashburton+7700+New+Zealand"
     },
     {
       icon: Clock,

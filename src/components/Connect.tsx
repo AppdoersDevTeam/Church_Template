@@ -152,7 +152,7 @@ const Connect = () => {
               <h4 className="text-lg font-semibold text-white">Get in Touch</h4>
               <div className="flex items-center text-gray-300">
                 <Phone className="h-5 w-5 mr-3 text-gold-400" />
-                <span>+64 9 123 4567</span>
+                <span>+64 3 308 1234</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail className="h-5 w-5 mr-3 text-gold-400" />

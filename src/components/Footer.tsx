@@ -52,11 +52,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">
                 <MapPin className="h-5 w-5 mr-3 text-gold-400 flex-shrink-0" />
-                <span>123 Hope Street, Auckland, New Zealand</span>
+                <span>284 Havelock Street, Ashburton 7700</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="h-5 w-5 mr-3 text-gold-400 flex-shrink-0" />
-                <span>+64 9 123 4567</span>
+                <span>+64 3 308 1234</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail className="h-5 w-5 mr-3 text-gold-400 flex-shrink-0" />

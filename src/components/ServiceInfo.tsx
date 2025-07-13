@@ -156,8 +156,7 @@ const ServiceInfo = () => {
                   <MapPin className="h-6 w-6 text-navy-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-navy-900">Ashburton Baptist Church</p>
-                    <p className="text-gray-600">123 Church Street, Christchurch 8011</p>
-                    <p className="text-gray-600">New Zealand</p>
+                    <p className="text-gray-600">284 Havelock Street, Ashburton 7700</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -184,12 +183,17 @@ const ServiceInfo = () => {
                 <MapPin className="h-16 w-16 mx-auto mb-4 opacity-80" />
                 <h4 className="text-2xl font-bold mb-4">Easy to Find</h4>
                 <p className="text-lg mb-6 opacity-90">
-                  Located in the heart of Christchurch, we're easily accessible by car, bus, or walking.
+                  Located in the heart of Ashburton, we're easily accessible by car, bus, or walking.
                 </p>
-                <button className="bg-white text-navy-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 flex items-center mx-auto">
+                <a 
+                  href="https://maps.google.com/?q=284+Havelock+Street+Ashburton+7700+New+Zealand" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white text-navy-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 flex items-center mx-auto"
+                >
                   Get Directions
                   <ArrowRight className="h-4 w-4 ml-2" />
-                </button>
+                </a>
               </div>
             </div>
           </div>

@@ -139,7 +139,7 @@ const JoinUs = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-navy-900">Ashburton Baptist Church</h4>
-                    <p className="text-gray-600">123 Faith Street, Auckland 1010</p>
+                    <p className="text-gray-600">284 Havelock Street, Ashburton 7700</p>
                   </div>
                   
                   <div className="space-y-2">
@@ -153,10 +153,15 @@ const JoinUs = () => {
                   </div>
                 </div>
 
-                <button className="mt-6 w-full bg-gradient-to-r from-navy-600 to-navy-700 text-white py-3 rounded-xl font-semibold hover:from-navy-700 hover:to-navy-800 transition-all duration-300 flex items-center justify-center">
+                <a 
+                  href="https://maps.google.com/?q=284+Havelock+Street+Ashburton+7700+New+Zealand" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="mt-6 w-full bg-gradient-to-r from-navy-600 to-navy-700 text-white py-3 rounded-xl font-semibold hover:from-navy-700 hover:to-navy-800 transition-all duration-300 flex items-center justify-center"
+                >
                   <MapPin className="h-5 w-5 mr-2" />
                   Get Directions
-                </button>
+                </a>
               </div>
 
               {/* Welcome Features */}

@@ -29,7 +29,7 @@ const Leadership = () => {
       description: "Leading our congregation with wisdom and compassion for over 15 years.",
       icon: Heart,
               contact: "pastor@ashburtonbaptist.co.nz",
-      phone: "+64 3 555 0123"
+      phone: "+64 3 308 1234"
     },
     {
       name: "Sarah Johnson",
