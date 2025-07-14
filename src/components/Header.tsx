@@ -28,7 +28,7 @@ const Header = () => {
         : 'bg-transparent'
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-14 sm:h-16 md:h-18 lg:h-20 relative pt-16 sm:pt-20 md:pt-24 lg:pt-28 xl:pt-32">
+        <div className="flex justify-center items-center h-14 sm:h-16 md:h-18 lg:h-20 relative pt-20 sm:pt-24 md:pt-28 lg:pt-32 xl:pt-36">
           {/* Desktop Navigation - Centered */}
           <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
             {navItems.map((item, index) => (
