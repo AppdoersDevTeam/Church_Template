@@ -57,23 +57,23 @@ const Services = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${
+        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
             Join Us for{' '}
             <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
               Worship
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed">
             Experience the presence of God in our welcoming community. 
             Whether in-person or online, there's a place for you.
           </p>
         </div>
 
         {/* Services grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
           {services.map((service, index) => (
             <div
               key={service.title}
@@ -82,24 +82,24 @@ const Services = () => {
               }`}
               style={{ transitionDelay: `${300 + index * 200}ms` }}
             >
-              <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 hover:transform hover:scale-105 h-full">
-                <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="h-8 w-8 text-white" />
+              <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 hover:transform hover:scale-105 h-full">
+                <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br ${service.color} rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">{service.title}</h3>
                 
-                <div className="flex items-center text-gold-400 mb-4">
-                  <Clock className="h-4 w-4 mr-2" />
-                  <span className="font-semibold">{service.time}</span>
+                <div className="flex items-center text-gold-400 mb-3 sm:mb-4">
+                  <Clock className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
+                  <span className="font-semibold text-sm sm:text-base">{service.time}</span>
                 </div>
                 
-                <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
+                <p className="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{service.description}</p>
                 
-                <ul className="space-y-2">
+                <ul className="space-y-1 sm:space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                    <li key={featureIndex} className="flex items-center text-gray-300 text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gold-400 rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
                       {feature}
                     </li>
                   ))}
@@ -113,17 +113,17 @@ const Services = () => {
         <div className={`text-center transition-all duration-1000 delay-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <div className="inline-flex items-center space-x-4 bg-white bg-opacity-10 backdrop-blur-md rounded-2xl px-8 py-6 text-white border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
-            <MapPin className="h-8 w-8 text-gold-400" />
-            <div className="text-left">
-              <p className="font-semibold text-lg">Ashburton Baptist Church</p>
-              <p className="text-gray-300">284 Havelock Street, Ashburton 7700</p>
+          <div className="inline-flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4 bg-white bg-opacity-10 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 py-4 sm:px-6 sm:py-5 lg:px-8 lg:py-6 text-white border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
+            <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-gold-400" />
+            <div className="text-center sm:text-left">
+              <p className="font-semibold text-sm sm:text-base lg:text-lg">Ashburton Baptist Church</p>
+              <p className="text-gray-300 text-xs sm:text-sm">284 Havelock Street, Ashburton 7700</p>
             </div>
             <a 
               href="https://maps.google.com/?q=284+Havelock+Street+Ashburton+7700+New+Zealand" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-3 rounded-full font-semibold hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 ml-4 inline-block"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full font-semibold text-sm sm:text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 sm:ml-4 inline-block"
             >
               Get Directions
             </a>

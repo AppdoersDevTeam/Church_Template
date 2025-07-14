@@ -15,7 +15,13 @@ const Hero = () => {
         <img 
           src="/ABC background01.png" 
           alt="Church Background" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center min-h-screen"
+          style={{
+            minWidth: '100vw',
+            minHeight: '100vh',
+            maxWidth: '100%',
+            maxHeight: '100%'
+          }}
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* Organic shapes */}
@@ -25,7 +31,7 @@ const Hero = () => {
       </div>
 
       {/* ABC Logo - Top Left */}
-      <div className="absolute top-8 left-40 z-20">
+      <div className="absolute top-4 left-8 sm:top-6 sm:left-12 md:top-8 md:left-16 lg:top-8 lg:left-24 xl:top-8 xl:left-40 z-20">
         <div className="relative">
           {/* Solid sun effect background */}
           <div className="absolute inset-0 bg-gold-500 rounded-full blur-sm scale-110 animate-pulse"></div>
@@ -37,7 +43,13 @@ const Hero = () => {
             <img 
               src="/ABC Logo.png" 
               alt="ABC Logo" 
-              className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 rounded-full"
+              className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-48 xl:w-48 2xl:h-56 2xl:w-56 rounded-full object-cover"
+              style={{
+                minWidth: '80px',
+                minHeight: '80px',
+                maxWidth: '100%',
+                maxHeight: '100%'
+              }}
             />
           </div>
         </div>
@@ -48,50 +60,45 @@ const Hero = () => {
         <div className={`transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            <div>Welcome to</div>
-            <div className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-              Ashburton Baptist Church
-            </div>
-          </h1>
+
           
-          <p className={`text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto transition-all duration-1000 delay-300 ${
+          <p className={`text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             A place where faith meets community, and every person matters. 
             Join us as we grow together in love, hope, and purpose.
           </p>
 
-          <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 transition-all duration-1000 delay-500 ${
+          <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 transition-all duration-1000 delay-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <button className="group bg-gradient-to-r from-gold-500 to-gold-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center space-x-2">
-              <Play className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            <button className="group bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center space-x-2">
+              <Play className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Watch Online</span>
             </button>
             
-            <button className="group border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-navy-900 transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
-              <MapPin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            <button className="group border-2 border-white text-white px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-white hover:text-navy-900 transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
+              <MapPin className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Find Us</span>
             </button>
           </div>
 
           {/* Service times card */}
-          <div className={`inline-flex items-center space-x-4 bg-white bg-opacity-10 backdrop-blur-md rounded-2xl px-6 py-4 text-white border border-white border-opacity-20 transition-all duration-1000 delay-700 hover:bg-opacity-20 ${
+          <div className={`inline-flex items-center space-x-2 sm:space-x-4 bg-white bg-opacity-10 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 py-3 sm:px-6 sm:py-4 text-white border border-white border-opacity-20 transition-all duration-1000 delay-700 hover:bg-opacity-20 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <Calendar className="h-6 w-6 text-gold-400" />
+            <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400" />
             <div className="text-left">
-              <p className="font-semibold">Sunday Services</p>
-              <p className="text-sm text-gray-200">9:00 AM & 11:00 AM</p>
+              <p className="font-semibold text-sm sm:text-base">Sunday Services</p>
+              <p className="text-xs sm:text-sm text-gray-200">9:00 AM & 11:00 AM</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <ChevronDown className="h-8 w-8 text-white animate-bounce cursor-pointer hover:text-gold-400 transition-colors duration-300" />
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+        <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8 text-white animate-bounce cursor-pointer hover:text-gold-400 transition-colors duration-300" />
       </div>
     </section>
   );
