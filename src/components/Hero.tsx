@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-80">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-56">
         <div className={`transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
@@ -64,7 +64,9 @@ const Hero = () => {
           
           <p className={`text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}>
+          } raleway-semibold`} 
+            style={{ fontSize: '1.5625rem' }}
+          >
             A place where faith meets community, and every person matters. 
             Join us as we grow together in love, hope, and purpose.
           </p>
@@ -72,12 +74,12 @@ const Hero = () => {
           <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 transition-all duration-1000 delay-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <button className="group bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center space-x-2">
+            <button className="group bg-transparent text-gold-600 border-2 border-gold-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full font-semibold text-xs sm:text-sm md:text-base hover:bg-gradient-to-r hover:from-gold-500 hover:to-gold-600 hover:text-white transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center space-x-2">
               <Play className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Watch Online</span>
             </button>
             
-            <button className="group border-2 border-white text-white px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-white hover:text-navy-900 transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
+            <button className="group border-2 border-white text-white px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full font-semibold text-xs sm:text-sm md:text-base hover:bg-gradient-to-r hover:from-gold-500 hover:to-gold-600 hover:text-white transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
               <MapPin className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Find Us</span>
             </button>
