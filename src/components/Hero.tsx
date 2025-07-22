@@ -90,9 +90,9 @@ const Hero = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400" />
-            <div className="text-left">
-              <p className="font-semibold text-sm sm:text-base">Sunday Services</p>
-              <p className="text-xs sm:text-sm text-gray-200">9:00 AM & 11:00 AM</p>
+            <div className="text-center">
+              <p className="font-semibold text-sm sm:text-base">Sunday Service</p>
+              <p className="text-xs sm:text-sm text-gold-400 font-semibold shine-text">10:00 AM</p>
             </div>
           </div>
         </div>

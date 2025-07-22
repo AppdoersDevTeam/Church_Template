@@ -15,7 +15,13 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
+    { name: 'Who We Are', href: '#about', subItems: [
+      { name: 'Our Team', href: '#team' },
+      { name: 'Our Vision & Values', href: '#vision-values' },
+      { name: 'Our Constitution', href: '#constitution' },
+      { name: 'Our Beliefs', href: '#beliefs' },
+      { name: 'Our History', href: '#history' }
+    ] },
     { name: 'Services', href: '#services' },
     { name: 'Events', href: '#events' },
     { name: 'Connect', href: '#connect' },
@@ -34,17 +40,32 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-2 xl:space-x-4 ml-auto">
             {navItems.map((item, index) => (
               <React.Fragment key={item.name}>
-                <a
-                  href={item.href}
-                  className={`relative px-2 py-2 lg:px-4 lg:py-3 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300 hover:scale-105 uppercase lato-semibold ${
-                    isScrolled 
-                      ? 'text-navy-600 hover:text-gold-500' 
-                      : 'text-white hover:text-gold-500'
-                  } group`}
-                >
-                  {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                <div className="relative group">
+                  <a
+                    href={item.href}
+                    className={`relative px-2 py-2 lg:px-4 lg:py-3 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300 hover:scale-105 uppercase lato-semibold ${
+                      isScrolled 
+                        ? 'text-navy-600 hover:text-gold-500' 
+                        : 'text-white hover:text-gold-500'
+                    } group`}
+                  >
+                    {item.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
+                  </a>
+                  {item.subItems && (
+                    <div className="absolute left-0 mt-2 w-40 bg-transparent rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto">
+                      {item.subItems.map((sub, subIdx) => (
+                        <a
+                          key={sub.name}
+                          href={sub.href}
+                          className="block px-4 py-2 text-white hover:bg-gold-50 hover:text-gold-600 lato-semibold text-3xs lg:text-2xs xl:text-xs font-bold rounded-lg transition-all duration-200"
+                        >
+                          {sub.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
                 {index < navItems.length - 1 && (
                   <span className={`text-sm lg:text-lg font-medium ${
                     isScrolled ? 'text-gold-600' : 'text-gold-400'
@@ -83,18 +104,33 @@ const Header = () => {
         }`}>
           <div className="bg-white bg-opacity-95 backdrop-blur-md rounded-lg shadow-xl mt-2 py-2 sm:py-4">
             {navItems.map((item, index) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block px-6 py-4 text-base sm:text-lg text-navy-600 hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-bold rounded-lg uppercase lato-semibold"
-                style={{
-                  animationDelay: `${index * 0.1}s`,
-                  animation: isMenuOpen ? 'slideInLeft 0.3s ease-out forwards' : 'none'
-                }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
+              <div key={item.name} className="relative">
+                <a
+                  href={item.href}
+                  className="block px-6 py-4 text-base sm:text-lg text-navy-600 hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-bold rounded-lg uppercase lato-semibold"
+                  style={{
+                    animationDelay: `${index * 0.1}s`,
+                    animation: isMenuOpen ? 'slideInLeft 0.3s ease-out forwards' : 'none'
+                  }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+                {item.subItems && isMenuOpen && (
+                  <div className="ml-4 mt-1 bg-transparent">
+                    {item.subItems.map((sub) => (
+                      <a
+                        key={sub.name}
+                        href={sub.href}
+                        className="block px-6 py-2 text-2xs sm:text-xs text-white hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-bold rounded-lg uppercase lato-semibold"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {sub.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <div className="px-4 pt-2 sm:px-6">
               <a 

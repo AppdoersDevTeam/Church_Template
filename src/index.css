@@ -45,6 +45,27 @@ html {
   }
 }
 
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shine-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #FFD700 20%, #fff 50%, #FFD700 80%);
+  background-size: 200% auto;
+  color: #FFD700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
