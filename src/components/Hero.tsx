@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
 
       {/* ABC Logo - Top Left */}
-      <div className="absolute top-4 left-8 sm:top-6 sm:left-12 md:top-8 md:left-16 lg:top-8 lg:left-24 xl:top-8 xl:left-40 z-20">
+      <div className="absolute top-4 left-2 sm:top-6 sm:left-4 md:top-8 md:left-6 lg:top-8 lg:left-8 xl:top-8 xl:left-12 z-20">
         <div className="relative">
           {/* Solid sun effect background */}
           <div className="absolute inset-0 bg-gold-500 rounded-full blur-sm scale-110 animate-pulse"></div>

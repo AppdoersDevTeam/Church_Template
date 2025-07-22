@@ -22,13 +22,9 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white shadow-lg backdrop-blur-md' 
-        : 'bg-transparent'
-    }`}>
+    <header className="absolute top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-14 sm:h-16 md:h-18 lg:h-20 relative pt-20 sm:pt-24 md:pt-28 lg:pt-32 xl:pt-36">
+        <div className="flex justify-center items-center h-14 sm:h-16 md:h-18 lg:h-20 relative">
           {/* Desktop Navigation - Centered */}
           <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
             {navItems.map((item, index) => (
@@ -79,7 +75,7 @@ const Header = () => {
             ? 'max-h-96 opacity-100' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
-          <div className="bg-white rounded-lg shadow-xl mt-2 py-2 sm:py-4">
+          <div className="bg-transparent rounded-lg shadow-xl mt-2 py-2 sm:py-4">
             {navItems.map((item, index) => (
               <a
                 key={item.name}
