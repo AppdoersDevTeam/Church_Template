@@ -24,7 +24,12 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-14 sm:h-16 md:h-18 lg:h-20 relative">
+        <div className="flex justify-between items-center h-14 sm:h-16 md:h-18 lg:h-20 relative">
+          {/* Logo or site name for left side (optional, can be left empty for now) */}
+          <div className="flex-1 flex items-center">
+            {/* You can add a logo or site name here if desired */}
+          </div>
+
           {/* Desktop Navigation - Centered */}
           <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
             {navItems.map((item, index) => (
@@ -58,14 +63,15 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Mobile menu button - Centered */}
+          {/* Mobile menu button - Right aligned */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`lg:hidden p-1 sm:p-2 rounded-md transition-colors duration-300 ${
+            className={`lg:hidden p-2 sm:p-3 rounded-md transition-colors duration-300 ml-auto focus:outline-none focus:ring-2 focus:ring-gold-500 ${
               isScrolled ? 'text-navy-600' : 'text-white'
             }`}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
-            {isMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
+            {isMenuOpen ? <X className="h-8 w-8 sm:h-9 sm:w-9" /> : <Menu className="h-8 w-8 sm:h-9 sm:w-9" />}
           </button>
         </div>
 
@@ -75,12 +81,12 @@ const Header = () => {
             ? 'max-h-96 opacity-100' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
-          <div className="bg-transparent rounded-lg shadow-xl mt-2 py-2 sm:py-4">
+          <div className="bg-white bg-opacity-95 backdrop-blur-md rounded-lg shadow-xl mt-2 py-2 sm:py-4">
             {navItems.map((item, index) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base text-navy-600 hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-medium"
+                className="block px-6 py-4 text-lg sm:text-xl text-navy-600 hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-semibold rounded-lg"
                 style={{
                   animationDelay: `${index * 0.1}s`,
                   animation: isMenuOpen ? 'slideInLeft 0.3s ease-out forwards' : 'none'
@@ -93,7 +99,7 @@ const Header = () => {
             <div className="px-4 pt-2 sm:px-6">
               <a 
                 href="#join-us" 
-                className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium text-sm sm:text-base hover:from-gold-600 hover:to-gold-700 transition-all duration-300 inline-block text-center"
+                className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-4 text-lg sm:text-xl rounded-lg font-semibold hover:from-gold-600 hover:to-gold-700 transition-all duration-300 inline-block text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Visit Us
