@@ -31,7 +31,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
+          <div className="hidden lg:flex items-center space-x-2 xl:space-x-4 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             {navItems.map((item, index) => (
               <React.Fragment key={item.name}>
                 <a
@@ -57,7 +57,7 @@ const Header = () => {
             }`}>/</span>
             <a 
               href="#join-us" 
-              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-3 rounded-full font-bold text-xs lg:text-sm xl:text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-3 rounded-full font-bold text-xs lg:text-sm xl:text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block whitespace-nowrap"
             >
               Visit Us
             </a>
