@@ -22,16 +22,16 @@ const Header = () => {
   ];
 
   return (
-    <header className="absolute top-[80px] left-0 w-full bg-transparent transition-all duration-300 z-50">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="absolute top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-18 lg:h-20 relative">
           {/* Logo or site name for left side (optional, can be left empty for now) */}
           <div className="flex-1 flex items-center">
             {/* You can add a logo or site name here if desired */}
           </div>
 
-          {/* Desktop Navigation - Right Side */}
-          <div className="hidden lg:flex items-center space-x-2 xl:space-x-4 justify-end flex-1">
+          {/* Desktop Navigation - Right aligned */}
+          <div className="hidden lg:flex items-center space-x-2 xl:space-x-4 ml-auto">
             {navItems.map((item, index) => (
               <React.Fragment key={item.name}>
                 <a

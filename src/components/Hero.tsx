@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
 
       {/* ABC Logo - Top Left */}
-      <div className="absolute top-0 left-16 sm:top-0 sm:left-24 md:top-4 md:left-32 lg:top-8 lg:left-40 xl:top-12 xl:left-56 z-20">
+      <div className="absolute top-4 left-2 sm:top-6 sm:left-4 md:top-8 md:left-6 lg:top-8 lg:left-8 xl:top-8 xl:left-12 z-20">
         <div className="relative">
           {/* Solid sun effect background */}
           <div className="absolute inset-0 bg-gold-500 rounded-full blur-sm scale-110 animate-pulse"></div>
@@ -43,10 +43,10 @@ const Hero = () => {
             <img 
               src="/ABC Logo.png" 
               alt="ABC Logo" 
-              className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 2xl:h-40 2xl:w-40 rounded-full object-cover"
+              className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-36 xl:w-36 2xl:h-44 2xl:w-44 rounded-full object-cover"
               style={{
-                minWidth: '48px',
-                minHeight: '48px',
+                minWidth: '64px',
+                minHeight: '64px',
                 maxWidth: '100%',
                 maxHeight: '100%'
               }}
