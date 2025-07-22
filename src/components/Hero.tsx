@@ -76,7 +76,7 @@ const Hero = () => {
           }`}>
             <button className="group bg-transparent text-gold-600 border-2 border-gold-500 px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full font-semibold text-xs sm:text-sm md:text-base hover:bg-gradient-to-r hover:from-gold-500 hover:to-gold-600 hover:text-white transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center space-x-2">
               <Play className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
-              <span>Watch Online</span>
+              <span className="shine-text">Watch Online</span>
             </button>
             
             <button className="group border-2 border-white text-white px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-full font-semibold text-xs sm:text-sm md:text-base hover:bg-gradient-to-r hover:from-gold-500 hover:to-gold-600 hover:text-white transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">

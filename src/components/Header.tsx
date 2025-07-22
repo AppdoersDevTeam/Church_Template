@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
+    { name: 'New Here', href: '#home' },
     { name: 'Who We Are', href: '#about', subItems: [
       { name: 'Our Team', href: '#team' },
       { name: 'Our Vision & Values', href: '#vision-values' },
@@ -80,7 +80,7 @@ const Header = () => {
               href="#join-us" 
               className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-3 rounded-full font-bold text-xs lg:text-sm xl:text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block whitespace-nowrap lato-semibold"
             >
-              Visit Us
+              <span className="shine-text">Visit Us</span>
             </a>
           </div>
 
