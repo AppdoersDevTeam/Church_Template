@@ -36,7 +36,7 @@ const Header = () => {
               <React.Fragment key={item.name}>
                 <a
                   href={item.href}
-                  className={`relative px-2 py-2 lg:px-4 lg:py-3 text-sm lg:text-base xl:text-lg font-bold transition-all duration-300 hover:scale-105 uppercase ${
+                  className={`relative px-2 py-2 lg:px-4 lg:py-3 text-xs lg:text-sm xl:text-base font-bold transition-all duration-300 hover:scale-105 uppercase lato-semibold ${
                     isScrolled 
                       ? 'text-navy-600 hover:text-gold-500' 
                       : 'text-white hover:text-gold-500'
@@ -57,7 +57,7 @@ const Header = () => {
             }`}>/</span>
             <a 
               href="#join-us" 
-              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-3 rounded-full font-bold text-xs lg:text-sm xl:text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block whitespace-nowrap"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-3 rounded-full font-bold text-xs lg:text-sm xl:text-base hover:from-gold-600 hover:to-gold-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-block whitespace-nowrap lato-semibold"
             >
               Visit Us
             </a>
@@ -86,7 +86,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-6 py-4 text-lg sm:text-xl text-navy-600 hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-semibold rounded-lg uppercase"
+                className="block px-6 py-4 text-base sm:text-lg text-navy-600 hover:text-gold-600 hover:bg-gold-50 transition-all duration-300 font-bold rounded-lg uppercase lato-semibold"
                 style={{
                   animationDelay: `${index * 0.1}s`,
                   animation: isMenuOpen ? 'slideInLeft 0.3s ease-out forwards' : 'none'
